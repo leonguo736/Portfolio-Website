@@ -1,21 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import About from "./components/about/About";
-import Contact from "./components/Contact";
-import Home from "./components/home/Home";
-import NavBar from "./components/navbar/NavBar";
-import Projects from "./components/projects/Projects";
-import Skills from "./components/skills/Skills";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Footer } from "./components/Footer";
+import { Courses } from "./components/Courses";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Home />
-      <About />
+      <Banner />
       <Projects />
+      <Courses />
       <Skills />
-      <Contact />
+      <Footer />
     </div>
   );
 }
